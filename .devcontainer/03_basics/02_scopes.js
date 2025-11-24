@@ -12,10 +12,9 @@ if (true){
 
 // console.log(a);
 // console.log(b);
--*+// *console.log(c);
+// *console.log(c);
 25-function one(){
-    con\-0UYHP-06EW
-    st username = "Omkar"
+    username = "Omkar"
 
     function two(){
         const website = "youtube"

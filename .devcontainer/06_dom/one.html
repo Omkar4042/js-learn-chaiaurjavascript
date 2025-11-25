@@ -1,19 +1,73 @@
+<!--  // http://127.0.0.1:8080/one.html -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  
-    <title>Dom Learning </title>
+    <title>Dom Learning</title>
     <style>
-        .bg-black{
-            background-color: blueviolet;
+        .bg-black {
+            background-color: rgb(165, 119, 210);
         }
-
     </style>
-<body>
-    <div class="bg-black">
-        <h1 class="heading" >DOM learning on Chai aur code </h1>
-       
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning on Chai aur code<span style="display: none" > test text </span></h1>
+
+        <h2>Lorem ipsum dolor sit amet consectetur </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <input type="password" name="" id="" >
+        
+    </div>
 </body>
 </html>
+
+<!-- 
+ // in browser if we want to fetch class , then we use .className but just .class gives undefined whY? 
+
+// we can also use document.getElementById('title').getAttribute('class') this will give ous different attributes in html page , for class , "heading"
+
+document.getElementById('title').setAttribute('class''test') here for the key Attribute need  to give value here 'test' but it allwise overrides it does not add new  -->
+
+
+
+<!-- ######### getElementById ########## -->
+<!-- // const title = document.getElementById('title') -->
+<!-- title
+<h1 id=​"title" class=​"heading">​DOM learning on Chai aur code​</h1>​
+title.style.backgroundColor = 'blue'
+'blue'
+title.style.padding = '15px'
+'15px'
+title.style.borderRadius = "15px" 
+'15px' -->
+
+<!-- ########## adding values ###########  
+ <!-- // const title = document.getElementById('title') -->
+<!-- 
+title
+title.textContent
+'DOM learning on Chai aur code test text '
+title.inner
+undefined
+title.innerHTML
+'DOM learning on Chai aur code<span style="display: none"> test text </span>'
+title.innerText
+'DOM learning on Chai aur code'
+
+here textContent gives all text even one which  is not shown on page , 
+
+innerText give the text which is show on preview page -->
+
+<!-- innerHTML show the html , more ?  -->
+
+<!-- we can use css methods in browser 
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​ -->
